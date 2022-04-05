@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* 
+	Author: ALISSA HARDISON
+	Date: 4 APR 2022
+	
+	Filename: zsp_home.css
+	This file contains the styles for ZSP Home Page:
+	>> RESET: styles for all devices under all conditions
+	>> MOBILE: styles for home page on mobile
+	>> TABLET: styles for home page on tablets
+	>> PC: styles for home page on computers
+*/
+/* ===========================================================================
+								>> RESET
+   ===========================================================================
+*/
+
+body, header, section { 
+   display: block;
+   width: 100%;
+}
+
+body, section, h1, h2, h3, h4, header, html, img {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+body{
+	background-color: rgb(230, 218, 186);
+}
+
+/* ===========================================================================
+								>> MOBILE (=<480px)
+   ===========================================================================
+*/	@media only screen and (max-width: 480px) {
+	header img {
+		width: 50%;
+		margin: auto 25% 1em;
+	}
+	
+	section a img {
+		width: 90%;
+		margin: 5%;
+	}
+}
+
+/* ===========================================================================
+								>> TABLET (480<<769px)
+   ===========================================================================
+*/	@media only screen and (min-width: 481px) {
+	header img {
+		width: 50%;
+		margin: auto 25% 1em;
+	}
+	
+	section a img {
+		width: 15%;
+		margin: 1em;
+	}
+}
+
+/* ===========================================================================
+								>> PC (>=769px)
+   ===========================================================================
+*/	@media only screen and (min-width: 769px) {
+	
+	header img {
+		width: 20%;
+		margin: auto 40% 2em;
+	}
+	
+	section a img {
+		width: 15%;
+		margin: 2em;
+		box-shadow: 5px 5px black;
+	}
+}
+
+
+
