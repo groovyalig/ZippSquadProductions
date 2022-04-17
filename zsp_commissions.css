@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/* 
+	Author: ALISSA HARDISON
+	Date: 11 APR 2022
+	
+	Filename: zsp_commissions.css
+	This file contains the styles for ZSP Commissions Page:
+	>> RESET: styles for all devices under all conditions
+	>> MOBILE: styles for home page on mobile
+	>> TABLET: styles for home page on tablets
+	>> PC: styles for home page on computers
+*/
+/* ===========================================================================
+								>> RESET
+   ===========================================================================
+*/
+
+html {
+	background-image: url('/images/bg_hallway.png');	
+}
+
+body, header, section, aside { 
+	display: block;
+}
+
+body, section, h1, h2, h3, h4, header, html, img {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(230, 218, 186);
+}
+
+/* ===========================================================================
+								>> MOBILE (=<480px)
+   ===========================================================================
+*/	@media only screen and (max-width: 480px) {
+	
+	body{
+		width: 100%;
+	}
+	
+	header img {
+		width: 15%;
+		margin: 10% auto 20% 6%;
+	}
+	
+	header h1 {
+		font-size: 3em;
+		float: right;
+		margin: 12% 7% 7% auto;
+	}
+	
+	div#carousel_commissions {
+		width: 90%;
+		margin: auto 5% 5%;
+	}
+	
+	div img{
+		width: auto;
+		height: 400px;
+		max-height: 400px;
+	}
+	
+	div#like_it {
+		width: 90%;
+		margin: auto 5% 5% 10%;
+	}
+	
+	h2, h5 {
+		text-align: center;
+	}
+	
+	footer {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 29%;
+	}
+	
+	footer p {
+		text-align: center;
+	}
+}
+
+/* ===========================================================================
+								>> TABLET (480<<769px)
+   ===========================================================================
+*/	@media only screen and (min-width: 481px) {
+	body{
+		width: 100%;
+	}
+	
+	header img {
+		width: 20%;
+		margin: 10% auto 10% 7%;
+	}
+	
+	header h1 {
+		font-size: 4em;
+		float: right;
+		margin: 15% 8% auto auto;
+	}
+	
+	div#carousel_commissions {
+		width: 90%;
+		margin: auto 5% 5%;
+	}
+	
+	div img{
+		width: auto;
+		height: 400px;
+		max-height: 400px;
+	}
+	
+	div#like_it {
+		width: 90%;
+		margin: auto 5% auto 10%;
+	}
+	
+	h2, h5 {
+		text-align: center;
+	}
+	
+	footer {
+		text-align: center;
+	}
+	
+	footer p {
+		text-align: center;
+	}
+}
+
+/* ===========================================================================
+								>> PC (>=769px)
+   ===========================================================================
+*/	@media only screen and (min-width: 769px) {
+	body {
+		width: 100%;
+	}
+	
+	header img {
+		width: 7%;
+		margin: 1% 5% 2% 30%;
+	}
+	
+	header > h1 {
+		font-size: 5em;
+		float: right;
+		margin: 1% 30% auto auto;
+		line-height: 1.5em;
+		font-family: serif;
+	}
+	
+	div#like_it {
+		display: block;
+		width: 50%;
+		margin: auto 25% 3%;
+		text-align: center;
+		text-bottom: ;
+	}
+	
+	div#carousel_commissions {
+		width: 50%;
+		margin: auto 25%;
+	}
+	
+	div img{
+		width: auto;
+		height: 400px;
+		max-height: 400px;
+	}
+	
+	footer > p {
+		display: block;
+		text-align: center;
+		vertical-align: baseline;
+	}
+}
+
+
+
