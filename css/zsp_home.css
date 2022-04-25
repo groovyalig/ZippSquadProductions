@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* 
+	Author: ALISSA HARDISON
+	Date: 4 APR 2022
+	
+	Filename: zsp_home.css
+	This file contains the styles for ZSP Home Page:
+	>> RESET: styles for all devices under all conditions
+	>> MOBILE: styles for home page on mobile
+	>> TABLET: styles for home page on tablets
+	>> PC: styles for home page on computers
+*/
+/* ===========================================================================
+								>> RESET
+   ===========================================================================
+*/
+
+body, header, footer, div { 
+   display: block;
+   width: 100%;
+}
+
+body, div, h1, h2, h3, h4, header, footer, html, img {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+body{
+	background-color: rgb(230, 218, 186);
+}
+
+/* ===========================================================================
+								>> MOBILE (=<480px)
+   ===========================================================================
+*/	@media only screen and (max-width: 480px) {
+	img#logo {
+		width: 40%;
+		margin: 5% 30%;
+	}
+	
+	div#mobileColumns {
+		display: block;
+	}
+	
+	div#mobileColumns > a > img.mobileColumn {
+		width: 100%;
+		margin: 12% auto auto auto;
+	}
+
+	div#columns{
+		display: none;
+	}
+	
+	footer p{
+		text-align: center;
+	}
+}
+
+/* ===========================================================================
+								>> TABLET (480<<769px)
+   ===========================================================================
+*/	@media only screen and (min-width: 481px) {
+	img#logo {
+		float: left;
+		width: 20%;
+		margin: 12% 18% auto 6%;
+	}
+	
+	div#mobileColumns {
+		display: none;
+	}
+	
+	divcolumns{
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	
+	div#columns > a > img.column{
+		margin: 4% 4% 1% 1%;
+		width: 13%;
+	}
+	
+	footer > p {
+		text-align: center;
+	}
+}
+
+/* ===========================================================================
+								>> PC (>=769px)
+   ===========================================================================
+*/	@media only screen and (min-width: 769px) {
+	img#logo {
+		float: left;
+		width: 30%;
+		margin: 9% 10% auto 2%;
+	}
+	
+	div#mobileColumns {
+		display: none;
+	}
+	
+	div#columns{
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	
+	div#columns > a > img.column{
+		margin: 4% 4% 1% 1%;
+		width: 13%;
+	}
+	
+	footer p{
+		position: absolute;
+		left: 11%;
+		bottom: 0px;
+	}
+}
+
+
+
